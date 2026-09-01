@@ -1,0 +1,32 @@
+{
+  "name": "web-service",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RAMSEYC4/web-service-#readme",
+  "bugs": {
+    "url": "https://github.com/RAMSEYC4/web-service-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAMSEYC4/web-service-.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "nodemon --env-file=.env server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.9.1",
+    "nodemon": "^3.1.14"
+  }
+}
