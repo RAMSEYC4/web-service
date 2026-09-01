@@ -1,5 +1,5 @@
 import app from "./app.js";
-import connectToDb from "./src/db/connect.js";
+import { connectToDb } from "./src/db/connect.js";
 
 const PORT = process.env.PORT;
 
@@ -20,3 +20,4 @@ const startServer = async () => {
 };
 
 await startServer();
+export default connectToDb;
