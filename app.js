@@ -9,7 +9,7 @@ app.get("/", async (req, res) => {
 
 app.get("/trails", async (req, res) => {
   try {
-    const trails = await getDb().collection("trails").find({}).toArray();
+    const trails = await getDb().collection("books").find({}).toArray();
     return res.status(200).json(trails);
   } catch (error) {
     console.error("Failed to retrieve trails:", error.message);
@@ -18,3 +18,4 @@ app.get("/trails", async (req, res) => {
 });
 
 export default app;
+
