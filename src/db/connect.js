@@ -10,7 +10,7 @@ const connectToDb = async () => {
 
   const client = new MongoClient(connectionString);
   await client.connect();
-  database = client.db(process.env.MONGODB_DB_NAME || 'web-service');
+  database = client.db(process.env.MONGODB_DB_NAME || 'cse341-books-db');
   return database;
 };
 
